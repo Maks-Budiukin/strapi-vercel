@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_whatever_test_components",
+  "info": {
+    "displayName": "test-component",
+    "icon": "information"
+  },
+  "options": {},
+  "attributes": {
+    "rich": {
+      "type": "richtext"
+    },
+    "subheader": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

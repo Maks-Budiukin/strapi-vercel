@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_gallery_gallery_items",
+  "info": {
+    "displayName": "GalleryItem"
+  },
+  "options": {},
+  "attributes": {
+    "SkillName": {
+      "type": "string"
+    },
+    "SkillIcon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

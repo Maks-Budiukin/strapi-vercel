@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_gallery_skills_galleries",
+  "info": {
+    "displayName": "SkillsGallery",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "SkillGallery": {
+      "type": "component",
+      "repeatable": true,
+      "component": "gallery.gallery-item"
+    }
+  }
+}
