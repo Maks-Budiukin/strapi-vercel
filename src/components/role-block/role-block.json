@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_role_block_role_blocks",
+  "info": {
+    "displayName": "RoleBlock",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "roleHeader": {
+      "type": "string"
+    },
+    "role": {
+      "type": "component",
+      "repeatable": true,
+      "component": "role-component.role"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolio_pages",
+  "info": {
+    "singularName": "portfolio-page",
+    "pluralName": "portfolio-pages",
+    "displayName": "PortfolioPages",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "pageHeader": {
+      "type": "string"
+    },
+    "pageDescription": {
+      "type": "text"
+    },
+    "myRoles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "role-block.role-block"
+    },
+    "preview": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "linkLive": {
+      "type": "string"
+    },
+    "linkFE": {
+      "type": "string"
+    },
+    "linkBE": {
+      "type": "string"
+    }
+  }
+}

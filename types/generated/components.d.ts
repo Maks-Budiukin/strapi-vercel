@@ -1,47 +1,35 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
-export interface GalleryGalleryItem extends Schema.Component {
-  collectionName: 'components_gallery_gallery_items';
+export interface RoleBlockRoleBlock extends Schema.Component {
+  collectionName: 'components_role_block_role_blocks';
   info: {
-    displayName: 'GalleryItem';
-  };
-  attributes: {
-    SkillName: Attribute.String;
-    SkillIcon: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-  };
-}
-
-export interface GallerySkillsGallery extends Schema.Component {
-  collectionName: 'components_gallery_skills_galleries';
-  info: {
-    displayName: 'SkillsGallery';
+    displayName: 'RoleBlock';
+    icon: 'apps';
     description: '';
   };
   attributes: {
-    Title: Attribute.String;
-    SkillGallery: Attribute.Component<'gallery.gallery-item', true>;
+    roleHeader: Attribute.String;
+    role: Attribute.Component<'role-component.role', true>;
   };
 }
 
-export interface WhateverTestComponent extends Schema.Component {
-  collectionName: 'components_whatever_test_components';
+export interface RoleComponentRole extends Schema.Component {
+  collectionName: 'components_role_component_roles';
   info: {
-    displayName: 'test-component';
-    icon: 'information';
+    displayName: 'Role';
+    description: '';
   };
   attributes: {
-    rich: Attribute.RichText;
-    subheader: Attribute.String;
-    description: Attribute.Text;
+    roleTitle: Attribute.String;
+    roleDescription: Attribute.Text;
   };
 }
 
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
-      'gallery.gallery-item': GalleryGalleryItem;
-      'gallery.skills-gallery': GallerySkillsGallery;
-      'whatever.test-component': WhateverTestComponent;
+      'role-block.role-block': RoleBlockRoleBlock;
+      'role-component.role': RoleComponentRole;
     }
   }
 }
